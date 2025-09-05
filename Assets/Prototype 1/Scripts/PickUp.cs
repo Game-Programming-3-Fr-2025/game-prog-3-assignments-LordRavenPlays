@@ -5,39 +5,51 @@ using UnityEngine;
 public class PickUp : MonoBehaviour
 {
     public Transform holdSpot;
+    public float holdSpotRadius = .4f;
     public LayerMask pickUpMask;
 
     public Vector3 Direction { get; set; }
     private GameObject itemHolding;
 
+    private bool isPlayerHoldingObject = false;
+
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-            if (itemHolding)
+
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            if (isPlayerHoldingObject == false)
             {
-                itemHolding.transform.position = transform.position + Direction;
-                itemHolding.transform.parent = null;
-                if (itemHolding.GetComponent<Rigidbody2D>())
-                    itemHolding.GetComponent<Rigidbody2D>().simulated = true;
-                itemHolding = null;
-            }
-          
-            else
-            {
-                Collider2D pickUpItem = Physics2D.OverlapCircle(transform.position + Direction, .4f, pickUpMask);
-                if (pickUpItem)
+                Collider2D pickUpItem = Physics2D.OverlapCircle(transform.position, holdSpotRadius, pickUpMask);
+
+                if (pickUpItem != null)
                 {
                     itemHolding = pickUpItem.gameObject;
                     itemHolding.transform.position = holdSpot.position;
-                    itemHolding.transform.parent = transform;
-                    if (itemHolding.GetComponent<Rigidbody>())
-                        itemHolding.GetComponent<Rigidbody2D>().simulated = false;
+                    itemHolding.GetComponent<Rigidbody2D>().simulated = false;
                 }
-            }
-     
-                
-                
+
+                isPlayerHoldingObject = true;
+            } 
+        }   
+        
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            isPlayerHoldingObject = false;
+            itemHolding.GetComponent<Rigidbody2D>().simulated = true;
+        }
+
+        if(isPlayerHoldingObject == true)
+        {
+            itemHolding.transform.position = holdSpot.position;
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(holdSpot.position, holdSpotRadius);
     }
 }

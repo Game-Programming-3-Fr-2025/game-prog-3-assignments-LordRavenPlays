@@ -506,6 +506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   holdSpot: {fileID: 485652944}
+  holdSpotRadius: 1
   pickUpMask:
     serializedVersion: 2
     m_Bits: 128

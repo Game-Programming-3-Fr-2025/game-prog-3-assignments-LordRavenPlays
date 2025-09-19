@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //uses code from https://www.youtube.com/watch?v=4OQjnKUENoE
 
@@ -58,12 +59,17 @@ public class PlayerP3 : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if (collision.gameObject.CompareTag("Point"))
+        if (other.gameObject.CompareTag("Point"))
         {
-            Destroy(gameObject);
+            Destroy(other.gameObject);
             spawnObjects();
+        }
+
+        if (other.gameObject.CompareTag("Zombie"))
+        {
+            SceneManager.LoadScene("LoseScene");
         }
     }
 }

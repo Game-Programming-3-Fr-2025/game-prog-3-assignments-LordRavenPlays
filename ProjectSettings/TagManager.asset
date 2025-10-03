@@ -10,6 +10,8 @@ TagManager:
   - Box
   - Entity
   - Key
+  - TeleportLeft
+  - TeleportRight
   layers:
   - Default
   - TransparentFX

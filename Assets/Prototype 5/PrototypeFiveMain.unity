@@ -2425,7 +2425,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RB: {fileID: 1562084081}
+  point1: {fileID: 1664191758}
+  point2: {fileID: 1683833576}
+  point3: {fileID: 2107798491}
+  point4: {fileID: 433293666}
+  point5: {fileID: 1214902363}
+  point6: {fileID: 526434517}
+  point7: {fileID: 1354142833}
+  point8: {fileID: 1190327105}
+  point9: {fileID: 1651942685}
+  point10: {fileID: 1583497087}
+  point11: {fileID: 97189216}
+  point12: {fileID: 379851240}
+  point13: {fileID: 1092069186}
+  point14: {fileID: 8201786}
+  point15: {fileID: 539392881}
+  point16: {fileID: 1714825824}
+  point17: {fileID: 725435103}
+  point18: {fileID: 1160559331}
   Speed: 7
+  SpeedDos: 2
 --- !u!212 &1562084083
 SpriteRenderer:
   m_ObjectHideFlags: 0

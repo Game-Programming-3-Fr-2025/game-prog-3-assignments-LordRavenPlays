@@ -47,12 +47,17 @@ public class PlayerScript4 : MonoBehaviour
 
         if (other.gameObject.CompareTag("Entity"))
         {
-            SceneManager.LoadScene("LoseScene");
+            SceneManager.LoadScene("P4Hub");
         }
 
         if (other.gameObject.CompareTag("Finish"))
         {
-            SceneManager.LoadScene("WinScene");
+            SceneManager.LoadScene("P4Hub");
+        }
+
+        if (other.gameObject.CompareTag("Level1Portal"))
+        {
+            SceneManager.LoadScene("Level1");
         }
     }
 }

@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79f223c0-6fab-4dd0-8101-4b800e841e59" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prototype 4/Scripts/EntityScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prototype 4/Scripts/EntityScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prototype 4/Scripts/EntityScript.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prototype 4/Scripts/EntityScript.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prototype 4/Scripts/Example.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prototype 4/Scripts/Example.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prototype 4/Scripts/PlayerScript4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prototype 4/Scripts/PlayerScript4.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prototype 4/Scripts/PlayerScript4.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prototype 4/Scripts/PlayerScript4.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.game-prog-3-assignments-LordRavenPlays/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.game-prog-3-assignments-LordRavenPlays/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1763903344131</updated>
       <workItem from="1763903346090" duration="25000" />
-      <workItem from="1763904328584" duration="750000" />
+      <workItem from="1763904328584" duration="1122000" />
     </task>
     <servers />
   </component>

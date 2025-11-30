@@ -13,6 +13,9 @@ TagManager:
   - TeleportLeft
   - TeleportRight
   - Level1Portal
+  - Pre-Key
+  - Level2Portal
+  - Level3Portal
   layers:
   - Default
   - TransparentFX

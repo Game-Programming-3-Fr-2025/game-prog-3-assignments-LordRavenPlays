@@ -7,6 +7,7 @@ public class PlayerScript4 : MonoBehaviour
     public float Speed = 5;
     Vector2 startPos = new Vector2();
     public GameObject FinishMarker;
+    public GameObject Key;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -44,6 +45,12 @@ public class PlayerScript4 : MonoBehaviour
             FinishMarker.SetActive(true);
             Destroy(other.gameObject);
         }
+        
+        if (other.gameObject.CompareTag("Pre-Key"))
+        {
+            Key.SetActive(true);
+            Destroy(other.gameObject);
+        }
 
         if (other.gameObject.CompareTag("Entity"))
         {
@@ -58,6 +65,11 @@ public class PlayerScript4 : MonoBehaviour
         if (other.gameObject.CompareTag("Level1Portal"))
         {
             SceneManager.LoadScene("Level1");
+        }
+        
+        if (other.gameObject.CompareTag("Level2Portal"))
+        {
+            SceneManager.LoadScene("Level2");
         }
     }
 }

@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Prototype 3/PrototypeThreeMain.unity
     guid: 214245533f3e84d04b8269391b42f7df
   - enabled: 1
-    path: Assets/Prototype 4/P4Hub.unity
+    path: Assets/Prototype 4/Scenes/P4Hub.unity
     guid: ecc9b6f3edecb9840bfc2d5a1205d6db
   - enabled: 1
     path: Assets/Prototype 5/PrototypeFiveMain.unity
@@ -33,16 +33,16 @@ EditorBuildSettings:
     path: Assets/Prototype 3/LoseScene.unity
     guid: afc03b8752fb49e4792b1199f4d76717
   - enabled: 1
-    path: Assets/Prototype 4/LoseScene.unity
+    path: Assets/Prototype 4/Scenes/LoseScene.unity
     guid: 1f5dc06faca166d4fba0ae60becba6c4
   - enabled: 1
-    path: Assets/Prototype 4/WinScene.unity
+    path: Assets/Prototype 4/Scenes/WinScene.unity
     guid: 30c6559bd61114e4982cc558eac0f3dd
   - enabled: 1
-    path: Assets/Prototype 4/Level1.unity
+    path: Assets/Prototype 4/Scenes/Level1.unity
     guid: 78a5c91cc3b964098b05a9514aae7cc1
   - enabled: 1
-    path: Assets/Prototype 4/Level2.unity
+    path: Assets/Prototype 4/Scenes/Level2.unity
     guid: 31c934db7a671bb4b8f8ad6600b12cad
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 99f9c9493070a9d4c979a8fec7c5a8d3, type: 2}

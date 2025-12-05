@@ -3,6 +3,11 @@ using UnityEngine.Serialization;
 
 public class GameManagerScript : MonoBehaviour
 {
+    public AudioSource HubPlayer;
+    public AudioClip HubNone;
+    public AudioClip HubOne;
+    public AudioClip HubTwo;
+    public AudioClip HubThree;
     public GameObject level1Bocker;
     public GameObject level2Bocker;
     public GameObject level3Bocker;
@@ -18,22 +23,23 @@ public class GameManagerScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        HubPlayer = GetComponent<AudioSource>();
+        HubPlayer.clip = HubNone;
+        HubPlayer.Play();
         if (GameInfo.BeatL1 == true)
         {
             level2Bocker.SetActive(false);;
             Boxes1.SetActive(true);
+            HubPlayer.clip = HubOne;
+            HubPlayer.Play();
         }
         
         if (GameInfo.BeatL2 == true)
         {
             level3Bocker.SetActive(false);
             Boxes2.SetActive(true);
+            HubPlayer.clip = HubTwo;
+            HubPlayer.Play();
         }
         
         if (GameInfo.BeatL3 == true)
@@ -47,6 +53,14 @@ public class GameManagerScript : MonoBehaviour
             level1Bocker.SetActive(true);
             level2Bocker.SetActive(true);
             level3Bocker.SetActive(true);
+            HubPlayer.clip = HubThree;
+            HubPlayer.Play();
         }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }

@@ -6,14 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="79f223c0-6fab-4dd0-8101-4b800e841e59" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.game-prog-3-assignments-LordRavenPlays/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.game-prog-3-assignments-LordRavenPlays/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prototype 4/Audio/GP3HubBGM.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prototype 4/Audio/GP3HubBGM.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prototype 4/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prototype 4/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameManagerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameManagerScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prototype 4/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prototype 4/Scenes/Level2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prototype 4/Scenes/P4Hub.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prototype 4/Scenes/P4Hub.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prototype 4/Scripts/PlayerScript4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prototype 4/Scripts/PlayerScript4.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +96,7 @@
       <workItem from="1763903346090" duration="25000" />
       <workItem from="1763904328584" duration="1122000" />
       <workItem from="1764534361877" duration="2024000" />
-      <workItem from="1764960101699" duration="6438000" />
+      <workItem from="1764960101699" duration="7836000" />
     </task>
     <servers />
   </component>

@@ -3,6 +3,7 @@ using UnityEngine.Serialization;
 
 public class GameManagerScript : MonoBehaviour
 {
+    public GameObject level1Bocker;
     public GameObject level2Bocker;
     public GameObject level3Bocker;
     public GameObject BossWall1;
@@ -25,13 +26,13 @@ public class GameManagerScript : MonoBehaviour
     {
         if (GameInfo.BeatL1 == true)
         {
-            Destroy(level2Bocker);
+            level2Bocker.SetActive(false);;
             Boxes1.SetActive(true);
         }
         
         if (GameInfo.BeatL2 == true)
         {
-            Destroy(level3Bocker);
+            level3Bocker.SetActive(false);
             Boxes2.SetActive(true);
         }
         
@@ -43,6 +44,9 @@ public class GameManagerScript : MonoBehaviour
             Destroy(BossWall4);
             Key.SetActive(true);
             Boxes3.SetActive(true);
+            level1Bocker.SetActive(true);
+            level2Bocker.SetActive(true);
+            level3Bocker.SetActive(true);
         }
     }
 }

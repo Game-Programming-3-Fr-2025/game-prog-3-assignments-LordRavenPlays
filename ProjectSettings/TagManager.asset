@@ -16,6 +16,13 @@ TagManager:
   - Pre-Key
   - Level2Portal
   - Level3Portal
+  - Finish1
+  - Finish2
+  - Finish3
+  - 1DoneBoxes
+  - 2DoneBoxes
+  - 3DoneBoxes
+  - EntityFinale
   layers:
   - Default
   - TransparentFX

@@ -8,8 +8,7 @@ public class PlayerScript4 : MonoBehaviour
     Vector2 startPos = new Vector2();
     public GameObject FinishMarker;
     public GameObject Key;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
         Vector3 startPos = transform.position;
@@ -56,10 +55,33 @@ public class PlayerScript4 : MonoBehaviour
         {
             SceneManager.LoadScene("P4Hub");
         }
-
-        if (other.gameObject.CompareTag("Finish"))
+        
+        if (other.gameObject.CompareTag("EntityFinale"))
         {
             SceneManager.LoadScene("P4Hub");
+        }
+
+        if (other.gameObject.CompareTag("Finish1"))
+        {
+            SceneManager.LoadScene("P4Hub");
+            GameInfo.BeatL1 = true;
+        }
+        
+        if (other.gameObject.CompareTag("Finish2"))
+        {
+            SceneManager.LoadScene("P4Hub");
+            GameInfo.BeatL2 = true;
+        }
+        
+        if (other.gameObject.CompareTag("Finish3"))
+        {
+            SceneManager.LoadScene("P4Hub");
+            GameInfo.BeatL3 = true;
+        }
+        
+        if (other.gameObject.CompareTag("Finish"))
+        {
+            SceneManager.LoadScene("WinScene");
         }
 
         if (other.gameObject.CompareTag("Level1Portal"))
@@ -71,5 +93,17 @@ public class PlayerScript4 : MonoBehaviour
         {
             SceneManager.LoadScene("Level2");
         }
+        
+        if (other.gameObject.CompareTag("Level3Portal"))
+        {
+            SceneManager.LoadScene("Level3");
+        }
     }
+}
+
+public static class GameInfo
+{
+    public static bool BeatL1 = false;
+    public static bool BeatL2 = false;
+    public static bool BeatL3 = false;
 }

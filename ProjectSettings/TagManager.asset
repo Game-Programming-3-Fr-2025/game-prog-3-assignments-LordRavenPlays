@@ -63,5 +63,14 @@ TagManager:
   - name: Player
     uniqueID: 2178312359
     locked: 0
+  - name: Blockers
+    uniqueID: 651296863
+    locked: 0
+  - name: New Layer 3
+    uniqueID: 1840574021
+    locked: 0
+  - name: New Layer 4
+    uniqueID: 3982524069
+    locked: 0
   m_RenderingLayers:
   - Default

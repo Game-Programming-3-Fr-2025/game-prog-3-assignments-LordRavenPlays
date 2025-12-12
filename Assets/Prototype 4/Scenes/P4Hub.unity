@@ -2012,7 +2012,7 @@ PrefabInstance:
       objectReference: {fileID: 1986315430}
     - target: {fileID: 7315860670568064128, guid: 04bef2c1ac4e5b84e88b1c53fef621ad, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Byorg
       objectReference: {fileID: 0}
     - target: {fileID: 7643751041919686141, guid: 04bef2c1ac4e5b84e88b1c53fef621ad, type: 3}
       propertyPath: m_LocalPosition.x

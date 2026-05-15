@@ -35,7 +35,6 @@ public class PlayerScript4 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Box"))
         {
-            Destroy(other.gameObject);
             RB.transform.position = startPos;
         }
 

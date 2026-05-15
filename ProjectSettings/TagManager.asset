@@ -2,17 +2,36 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - Ground
+  - Point
+  - Zombie
+  - Box
+  - Entity
+  - Key
+  - TeleportLeft
+  - TeleportRight
+  - Level1Portal
+  - Pre-Key
+  - Level2Portal
+  - Level3Portal
+  - Finish1
+  - Finish2
+  - Finish3
+  - 1DoneBoxes
+  - 2DoneBoxes
+  - 3DoneBoxes
+  - EntityFinale
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 
-  - 
+  - PickUp
   - 
   - 
   - 
@@ -41,3 +60,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Player
+    uniqueID: 2178312359
+    locked: 0
+  - name: Blockers
+    uniqueID: 651296863
+    locked: 0
+  - name: New Layer 3
+    uniqueID: 1840574021
+    locked: 0
+  - name: New Layer 4
+    uniqueID: 3982524069
+    locked: 0
+  m_RenderingLayers:
+  - Default
